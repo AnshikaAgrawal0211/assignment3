@@ -3,7 +3,7 @@ class Concate {
     l1 match {
       case _ if (l2.isEmpty) => l1
       case _ if (l1.isEmpty) => l2
-      case _ => concateList(l2.head :: l1, l2.tail)
+      case _ => concateList(l1.init , l1.last::l2)
     }
   }
 }
